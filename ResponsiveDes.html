@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>My webPage</title><!-- we can write style here using <style> -->
+    <style>
+        #grid{
+            background-color:green;
+            display:grid;
+            padding:20px;
+            grid-column-gap:20px;
+            grid-row-gap:10px;
+            grid-template-columns:200px 200px auto;
+        }
+        .grid-item{
+            background-color:orange;
+            font-size:20px;
+            padding:20px;
+        }
+        #container{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        #container>div{
+            background-color: springgreen;
+            font-size:20px;
+            margin:10px;
+            padding:20px;
+            width:200px;
+        }
+        @media(min-width :600px){
+            body{
+                background-color:red;
+            }
+        }
+        @media(max-width:599px){
+            body{
+               background-color:blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Html Document</h1>
+    <div id="container">
+        <div>1.This is some Sample</div>
+        <div>2.This is some Sample</div>
+        <div>3.This is some Sample</div>
+        <div>4.This is demo Flexbox</div>
+        <div>5.This is demo Flexbox</div>
+        <div>6.This is demo Flexbox</div>
+        <div>7.This is demo Flexbox</div>
+    </div>
+    <div id="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+    </div>
+</body>
+</html>
